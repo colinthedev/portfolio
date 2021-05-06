@@ -1,0 +1,77 @@
+
+// Hero section name
+.pinkLine {
+    border: 1.35px solid #F20D89;
+    height: 24rem;
+    position: absolute;
+    right: 3rem;
+    bottom: 0rem;
+}
+
+.greenLine {
+    border: 2px solid #89F20D;
+    position: absolute;
+}
+
+.L1 {
+    left: 0rem;
+    top: 24rem;
+    width: 31rem;
+}
+
+.L2 {
+    left: 15rem;
+    top: 21rem;
+    width: 38rem;
+}
+
+.L3 {
+    left: 35rem;
+    top: 18rem;
+    width: 26rem;
+}
+
+.L4 {
+    left: 49rem;
+    top: 17rem;
+    width: 28rem;
+}
+
+.L5 {
+    left: 64rem;
+    top: 21rem;
+    width: 28rem;
+}
+
+.L1,
+.L2,
+.L3,
+.L4,
+.L5 {
+    z-index: -100;
+    transform: rotate(45deg);
+    -ms-transform:rotate(45deg); /* IE 9 */
+    -moz-transform:rotate(45deg); /* Firefox */
+    -webkit-transform:rotate(45deg); /* Safari and Chrome */
+    -o-transform:rotate(45deg); /* Opera */
+}
+// Hero section name END
+
+// Button project section
+.buttonWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 37rem;
+    margin: 14.2rem 5rem auto 5rem;
+
+    &__btnLive {
+        cursor: pointer;
+        margin-bottom: 5rem;
+    }
+
+    &__btnCode {
+        cursor: pointer;
+        margin-top: 5rem;
+    }
+}

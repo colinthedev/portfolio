@@ -1,0 +1,14 @@
+{
+  "name": "colinthedev",
+  "version": "1.0.0",
+  "description": "personal portfolio",
+  "main": "main.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/ --recursive"
+  },
+  "author": "colin peters",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

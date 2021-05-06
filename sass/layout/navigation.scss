@@ -1,0 +1,50 @@
+
+.navigation {
+    display: block;
+    height: 11.7rem;
+
+    &__listWrapper {
+        display: flex;
+        flex-direction: row;
+        order: 1;
+        height: inherit;
+        align-items: center;
+        justify-content: flex-end;
+        margin-top: 1.5rem;
+
+        &-navList {
+            display: flex;
+            cursor: pointer;
+            margin-right: 6.3rem;
+            align-items: center;
+            height: 3rem;
+            position: relative;
+            transition: all .60s ease-in-out;
+        }
+
+        &-navList:before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1.5px;
+            top: calc(50% - 1);
+            right: 0;
+            background: #89F20D;
+            transition: inherit;
+        }
+
+        &-navList:hover:before {
+            left: 0;
+            width: 100%;
+        }
+
+        &-navList:hover {
+            transform: rotateY(45deg) scale(1.4);
+        }
+
+        &-navList:active {
+            transition: all .10s ease-in-out;
+            transform: rotateX(45deg);
+        }
+    }
+}

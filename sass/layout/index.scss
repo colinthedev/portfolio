@@ -1,0 +1,65 @@
+.gridContainer {
+    display: grid;
+    background: var(--color-background-black);
+    grid-template-rows: minmax(min-content, 95rem) minmax(min-content, 100vh) repeat(2, minmax(90rem, 100vh)) repeat(2, minmax(79rem, 100vh)) repeat(2, minmax(86rem, 100vh));
+    grid-template-columns: [full-start] minmax(min-content, 50rem) [center-start] repeat(12, [col-start] minmax(min-content, 10rem)[col-end]) [center-end] minmax(min-content, 50rem) [full-end];
+    justify-content: center;
+}
+
+.heroContainer {
+    grid-row: 1 / 2;
+    grid-column: full-start / full-end;
+    z-index: 99;
+}
+
+.innerFlexWrap {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
+    margin-top: auto !important;
+}
+
+.nameWrapper {
+    margin: 0rem auto auto auto;
+    order: 2;
+    position: relative;
+
+    &__colin {
+        display: block;
+        margin-bottom: -11.25rem;
+    }
+
+    &__peter {
+        display: inline-block;
+        margin-left: 20rem;
+    }
+
+    &__s {
+        display: inline-block;
+    }
+}
+
+.locationWrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: inherit;
+    writing-mode: vertical-rl;
+    order: 1;
+
+    &__dot {
+        display: inline-block;
+        margin-bottom: 1.25rem;
+        margin-left: 1rem;
+        height: 8px;
+        width: 8px;
+        color: #F20D89;
+    }
+
+    &__rochester {
+    }
+}
+
+.auroa {
+    margin-left: 5rem;
+}

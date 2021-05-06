@@ -1,0 +1,126 @@
+//Headings
+.headingXLrgSkills {
+    font-family: 'Cormorant', serif;
+    font-size: 30rem;
+    font-weight: 400;
+    line-height: 36.3rem;
+    letter-spacing: .04rem;
+    transform: rotate(90deg);
+    color: var(--color-text-yellow);
+    border: 6px solid var(--color-text-yellow);
+}
+
+.headingXLrgAbout {
+    font-family: 'Combo', cursive;
+    font-size: 30rem;
+    font-weight: 400;
+    line-height: 35.3rem;
+    letter-spacing: .04rem;
+    color: var(--color-text-white);
+}
+
+.headingXLrgContact {
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 30rem;
+    font-weight: 400;
+    line-height: 25.7rem;
+    letter-spacing: .04rem;
+    border: 4px solid var(--color-text-white);
+}
+
+.headingLrgFeatured {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 15rem; 
+    font-weight: 400;
+    line-height: 29.7rem;
+    letter-spacing: .09rem;
+    color:#121414;
+    -webkit-text-stroke: 6px var(--color-text-black);
+}
+
+.headingLrgName {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 20rem;
+    font-weight: 900;
+    line-height: 26.9rem;
+    letter-spacing: .01rem;
+    color: var(--color-background-black);
+    -webkit-text-stroke: 3px var(--color-text-white);    
+}
+
+.headingMediumFeatProj {
+    font-family: 'Redressed', cursive;
+    font-size: 12rem;
+    font-weight: 400;
+    letter-spacing: 0.15rem;
+    color: var(--color-text-black);
+}
+//Headings END
+
+// Hero Section Typography
+.navListTypography {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 2.1rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+    letter-spacing: .01rem;
+    transform: rotate(45deg);
+    color: rgba(253, 253, 253, 0.9);
+} 
+
+.locationTypography {
+    font-family: 'Jost', sans-serif;
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 5.8rem;
+    letter-spacing: 0.1rem;
+    opacity: .65;
+    color: hsla(0, 0%, 99%, 1);
+}
+// Hero Section Typography END
+
+//Feat Projects Typography
+.projectDescriptionFont {
+    font-family: 'Expletus Sans', cursive;
+    font-size: 3.6rem;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: .015rem;
+    color: var(--color-text-black);
+}
+
+.builtUsingTypography {
+    font-family: 'Expletus Sans', cursive;
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: .015rem;
+    color: var(--color-text-black);
+}
+
+.techTypography {
+    font-family: 'Expletus Sans', cursive;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: .015rem;
+    color: var(--color-text-black);
+}
+//Feat Projects Typography END
+
+// Buttons
+.viewLiveTypography {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 37px;
+    letter-spacing: .115rem;
+    color: var(--color-background-grey);
+    -webkit-text-stroke: 1.25px var(--color-text-black); 
+}
+
+.viewCodeTypography {
+
+}
+
+// Buttons END
