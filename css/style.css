@@ -63,6 +63,19 @@
     cursor: pointer;
     margin-top: 5rem; }
 
+.btnFlamingo {
+  cursor: pointer; }
+
+.dine-background {
+  background-image: url("../../assets/desktop/dine_background_desktop.png");
+  background-repeat: repeat-x;
+  background-position: center; }
+
+.photosnap-background {
+  background-image: url("../../assets/desktop/photosnap_background_desktop.png");
+  background-repeat: repeat-x;
+  background-position: center; }
+
 :root {
   --color-background-black: #121414;
   --color-background-white: #FDFDFD;
@@ -417,21 +430,26 @@ template {
 [hidden] {
   display: none; }
 
+.blkFont {
+  color: var(--color-text-black); }
+
+.whtFont {
+  color: var(--color-text-white); }
+
 .headingXLrgSkills {
   font-family: 'Cormorant', serif;
   font-size: 30rem;
   font-weight: 400;
-  line-height: 36.3rem;
+  line-height: 36.3px;
   letter-spacing: .04rem;
   transform: rotate(90deg);
-  color: var(--color-text-yellow);
-  border: 6px solid var(--color-text-yellow); }
+  color: var(--color-text-yellow); }
 
 .headingXLrgAbout {
   font-family: 'Combo', cursive;
   font-size: 30rem;
   font-weight: 400;
-  line-height: 35.3rem;
+  line-height: 35.3px;
   letter-spacing: .04rem;
   color: var(--color-text-white); }
 
@@ -439,7 +457,7 @@ template {
   font-family: 'Reem Kufi', sans-serif;
   font-size: 30rem;
   font-weight: 400;
-  line-height: 25.7rem;
+  line-height: 25.7px;
   letter-spacing: .04rem;
   border: 4px solid var(--color-text-white); }
 
@@ -465,8 +483,7 @@ template {
   font-family: 'Redressed', cursive;
   font-size: 12rem;
   font-weight: 400;
-  letter-spacing: 0.15rem;
-  color: var(--color-text-black); }
+  letter-spacing: 0.15rem; }
 
 .navListTypography {
   font-family: 'Cinzel Decorative', cursive;
@@ -486,29 +503,26 @@ template {
   opacity: .65;
   color: #fcfcfc; }
 
-.projectDescriptionFont {
+.projectFont {
   font-family: 'Expletus Sans', cursive;
   font-size: 3.6rem;
   font-weight: 400;
   line-height: 48px;
-  letter-spacing: .015rem;
-  color: var(--color-text-black); }
+  letter-spacing: .015rem; }
 
 .builtUsingTypography {
   font-family: 'Expletus Sans', cursive;
   font-size: 3rem;
   font-weight: 400;
   line-height: 40px;
-  letter-spacing: .015rem;
-  color: var(--color-text-black); }
+  letter-spacing: .015rem; }
 
 .techTypography {
   font-family: 'Expletus Sans', cursive;
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: .015rem;
-  color: var(--color-text-black); }
+  letter-spacing: .015rem; }
 
 .viewLiveTypography {
   font-family: 'Red Hat Display', sans-serif;
@@ -518,6 +532,22 @@ template {
   letter-spacing: .115rem;
   color: var(--color-background-grey);
   -webkit-text-stroke: 1.25px var(--color-text-black); }
+
+.viewMoreTypography {
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: .015rem;
+  color: var(--color-text-white); }
+
+.smlTypography-cormorant {
+  font-family: 'Cormorant', serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: .035rem;
+  color: var(--color-text-white); }
 
 .navigation {
   display: block;
@@ -559,7 +589,7 @@ template {
 .gridContainer {
   display: grid;
   background: var(--color-background-black);
-  grid-template-rows: minmax(min-content, 95rem) minmax(min-content, 100vh) repeat(2, minmax(90rem, 100vh)) repeat(2, minmax(79rem, 100vh)) repeat(2, minmax(86rem, 100vh));
+  grid-template-rows: minmax(min-content, 95rem) minmax(min-content, 100vh) repeat(2, minmax(90rem, 100vh)) repeat(2, minmax(110rem, 100vh)) repeat(2, minmax(86rem, 100vh));
   grid-template-columns: [full-start] minmax(min-content, 50rem) [center-start] repeat(12, [col-start] minmax(min-content, 10rem) [col-end]) [center-end] minmax(min-content, 50rem) [full-end];
   justify-content: center; }
 
@@ -666,14 +696,12 @@ template {
   flex-direction: column;
   flex-wrap: wrap;
   width: 100%;
-  height: 75rem;
-  margin: auto 0 auto 0;
-  background-image: url("../../assets/desktop/dine_background_desktop.png");
-  background-position: center; }
+  min-height: 75rem;
+  margin: auto 0 auto 0; }
   .contentWrapper__description {
     max-width: 44rem;
     margin-left: 5rem;
-    margin-right: 7.5rem; }
+    margin-right: 5rem; }
   .contentWrapper__built {
     display: flex;
     align-items: flex-end;
@@ -684,8 +712,45 @@ template {
 .techWrapper {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  width: 35rem;
-  margin-left: 5rem; }
+  justify-content: space-around;
+  max-width: 35rem;
+  margin-left: 2rem; }
+
+.projTwoContainer {
+  grid-row: 4 / 5;
+  grid-column: full-start / full-end;
+  background: var(--color-background-black);
+  z-index: 200;
+  display: flex; }
+
+.viewMoreContainer {
+  grid-row: 5 / 6;
+  grid-column: full-start / full-end;
+  background: var(--color-background-pink);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; }
+
+.accordionWrapper {
+  margin-top: 15rem; }
+
+.scrollWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem; }
+
+.flamingoWrapper {
+  margin-right: 3rem;
+  margin-left: auto; }
+
+.skillsContainer {
+  grid-row: 6 / 7;
+  grid-column: full-start / full-end;
+  background: var(--color-background-blue); }
+
+.headingWrapper {
+  height: inherit;
+  width: inherit; }
 
 /*# sourceMappingURL=style.css.map */

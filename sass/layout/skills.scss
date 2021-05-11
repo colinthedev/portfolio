@@ -1,0 +1,10 @@
+.skillsContainer {
+    grid-row: 6 / 7;
+    grid-column: full-start / full-end;
+    background: var(--color-background-blue);
+}
+
+.headingWrapper {
+    height: inherit;
+    width: inherit;
+}

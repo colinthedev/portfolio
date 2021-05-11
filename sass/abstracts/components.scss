@@ -75,3 +75,24 @@
         margin-top: 5rem;
     }
 }
+
+.btnFlamingo {
+    cursor: pointer;
+}
+// Button project section
+
+.dine-background {
+    background-image: url("../../assets/desktop/dine_background_desktop.png");
+    // background-repeat: no-repeat;
+    background-repeat: repeat-x;
+    // background-size: cover;
+    background-position: center;
+}
+
+.photosnap-background {
+    background-image: url("../../assets/desktop/photosnap_background_desktop.png");
+    // background-repeat: no-repeat;
+    background-repeat: repeat-x;
+    // background-size: cover;
+    background-position: center;
+}

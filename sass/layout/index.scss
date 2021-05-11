@@ -1,7 +1,7 @@
 .gridContainer {
     display: grid;
     background: var(--color-background-black);
-    grid-template-rows: minmax(min-content, 95rem) minmax(min-content, 100vh) repeat(2, minmax(90rem, 100vh)) repeat(2, minmax(79rem, 100vh)) repeat(2, minmax(86rem, 100vh));
+    grid-template-rows: minmax(min-content, 95rem) minmax(min-content, 100vh) repeat(2, minmax(90rem, 100vh)) repeat(2, minmax(110rem, 100vh)) repeat(2, minmax(86rem, 100vh));
     grid-template-columns: [full-start] minmax(min-content, 50rem) [center-start] repeat(12, [col-start] minmax(min-content, 10rem)[col-end]) [center-end] minmax(min-content, 50rem) [full-end];
     justify-content: center;
 }
